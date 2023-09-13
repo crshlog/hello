@@ -1,0 +1,37 @@
+int main()
+{
+  int x,y,z;
+  int a,b,c;
+
+  printf("masukkan sisi sisi segitiga:");
+  scanf("%d %d %d,%x,%y, %z");
+
+  if (x >= y && x >= z)
+  {
+    a = x;
+    b = y;
+    c = z;
+  }else if (y >= x && y >= z)
+  {
+    a = y;
+    b = x;
+    c = z;
+  }else
+  {
+    a = z;
+    b = x;
+    c = y;
+  }
+
+  if (a*a == (b*b + c*c))
+  {
+    printf("segitiga siku siku\n")
+  }else if (a*a > (b*b + c*c))
+  {
+    printf("segitiga tumpul\n")
+  }else
+  {
+    printf("segitiga lancip\n")
+  }
+  return 0
+}
