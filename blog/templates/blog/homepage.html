@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>homepage</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+
+    </head>
+    <body>
+        
+        <header>
+            <h1 class="logo">Trivind</h1>
+            </script>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <!-- a href buat ngasih link ke suatu source-->
+                <li><a class="hvr" href="#">MBTI Test</a></li>
+                <li><a class="hvr" href="#">About</a></li>
+                <li><a class="hvr" href="#">Login</a></li>        
+            </ul>
+
+            <div class="dropdown dropstart">
+                <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="menubar"></div>
+                    <div class="menubar"></div>
+                    <div class="menubar"></div>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">MBTI Test</a></li>
+                    <li><a class="dropdown-item" href="#">About</a></li>
+                    <li><a class="dropdown-item" href="#">Login</a></li>
+                </ul>
+            </div>
+
+
+        </header>
+        <section class="color">
+            <div class="section">
+                <img src="{% static 'stars.png' %}" id="stars">
+                <img src="{% static 'mountains_behind.png' %}" id="mountainb">
+                <!-- Opsi masalah >> Opsi Masalah >> Room Chat-->
+                <img src="{% static 'mountains_front.png' %}" id="mountainf">
+                <a href="/room_chat/" id="exp">Room Chat</a>
+                <script>
+                    if(window.innerHeight < window.innerWidth){
+                        window.onscroll = function() {
+                            var currentScrollPos = window.pageYOffset;
+                            if (25 > currentScrollPos) {
+                                document.getElementById("exp").style.bottom = "48.3%";
+                                document.getElementById("exp").style.zIndex = "";
+                                
+                            } else if (500 > currentScrollPos && 25 < currentScrollPos){
+                                document.getElementById("color").style.backgroundColor = "";
+                                document.getElementById("exp").style.bottom = "-100px"; /* adjust this value to the height of your header */
+                                document.getElementById("exp").style.zIndex = "-6"; /* adjust this value to the height of your header */
+                                var style = document.head.appendChild(document.createElement("style"));
+                                style.innerHTML = ".section:before {background: linear-gradient(to top,#1c0522,transparent)}";
+                            }else{
+                                document.getElementById("color").style.backgroundColor = "#361e48";
+                                setTimeout(function() {
+                                    var styleElem = document.head.appendChild(document.createElement("style"));
+                                styleElem.innerHTML = ".section:before {background: linear-gradient(to top,#361e48,transparent)}";    
+                                   }, 38);
+                                
+                            }
+                            
+                        }
+                        
+                    }else{}
+                    </script>
+            </div>
+        </section>
+        <img src="{% static 'moon.png' %}" id="moon">
+        <div class="secc" id="color">
+            <h2>Procrastination</h2>
+            <p>Procrastination is the act of unnecessarily and voluntarily delaying or postponing something despite knowing that there will be negative consequences for doing so. It is a common human experience involving delays in everyday chores or even putting off important tasks such as attending an appointment, submitting a job report or academic assignment, or broaching a stressful issue with a partner. It is often perceived as a negative trait due to its hindering effect on one's productivity, associated with depression, low self-esteem, guilt, and feelings of inadequacy,[1] However, it can also be considered a wise response to certain demands that could present risky or negative outcomes or require waiting for new information to arrive.[2]
+                From a cultural and social perspective, students from both Western and non-Western cultures are found to exhibit academic procrastination, but for different reasons. Students from Western cultures tend to procrastinate in order to avoid doing worse than they have done before or failing to learn as much as they should have, whereas students from non-Western cultures tend to procrastinate in order to avoid looking incompetent or demonstrating a lack of ability in front of their peers.[3] It is also important to consider how different cultural perspectives of time management can impact procrastination. For example, in cultures that have a multi-active view of time, people tend to place a higher value on making sure a job is done accurately before finishing. In cultures with a linear view of time, people tend to designate a certain amount of time on a task and stop once the allotted time has expired.
+                A study of the behavioral patterns of pigeons through delayed gratification suggests that procrastination is not unique to humans but can also be observed in some other animals.[5] There are experiments finding clear evidence for "procrastination" among pigeons, which show that pigeons tend to choose a complex but delayed task rather than an easy but hurry-up one.[6]</p>
+        </div>
+        
+        
+
+
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    </body>
+</html>

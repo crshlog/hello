@@ -13,12 +13,13 @@ post = [
 
 # Create your views here.
 def home(request):
-  content = {'posts' : Post.objects.all(),
-             'title' : 'homepage'}
-  return render (request, 'blog/home.html', content, )
+  return render (request, 'blog/homepage.html',)
 
 def about(request):
   return render (request, 'blog/about.html',  {'title': 'About'})
 
 def web(request):
   return render(request, 'blog/web.html')
+
+def rc(request):
+  return render(request, 'blog/Room_chat.html')
