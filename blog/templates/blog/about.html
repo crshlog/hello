@@ -1,5 +1,40 @@
-{% extends "blog/base.html"%}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>about</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'blog/css/style_about.css' %}">
+    </head>
+    <body>
+        <header>
+            <h1 class="logo">Trivind</h1>
+            </script>
+            <ul>
+                <li><a href="/home/" class="hvr">Home</a></li>
+                <!-- a href buat ngasih link ke suatu source-->
+                <li><a class="hvr" href="/test/">MBTI Test</a></li>
+                <li><a class="active">About</a></li>
+            </ul>
 
-{% block content%}
-    <p>This is my first web page</p>
-{% endblock %}
+            <div class="dropdown dropstart">
+                <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="menubar"></div>
+                    <div class="menubar"></div>
+                    <div class="menubar"></div>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">MBTI Test</a></li>
+                    <li><a class="dropdown-item" href="#">About</a></li>
+                    <li><a class="dropdown-item" href="#">Login</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="color">
+            <div class="section">
+                <img src="{% static 'stars.png' %}" id="stars">
+                <img src="{% static 'blog/halo.png' %}" id="blek">
+            </div>
+        </section>
+    </body>
+    </html>
