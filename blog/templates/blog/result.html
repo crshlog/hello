@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>mbti</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/result.css' %}">
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="/home/">Trivind</a>
+      </script>
+      <ul>
+          <li><a href="/home/" class="hvr">Home</a></li>
+          <li><a href="/test/" class="hvr">MBTI Test</a></li>
+          <li><a href="/about/" class="hvr">About</a></li>
+      </ul>
+
+      <div class="dropdown dropstart">
+        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <div class="menubar"></div>
+          <div class="menubar"></div>
+          <div class="menubar"></div>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item mobile" href="/home/">home</a></li>
+          <li><a class="dropdown-item mobile" href="/about/">About</a></li>
+        </ul>
+
+      </div>
+    </header>
+    <section class="color">
+      <div class="section">
+        <img src="{% static 'blog/bg.jpg' %}"id="glx">
+        <div id="info">
+          <div id="center">
+            <p>Hasil dari test tersebut kamu adalah</p>
+            <h1>{{hasil}}</h1>
+            <p>yuk kenali kepribadian mu lebih lanjut klik tombol dibawah</p>
+            <a id="showDiv" class="btn btn-primary btn-sm" href="#test" role="button">Cari Tahu</a>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="test">
+        <div id="result">
+          <div class="none" id="ISTJ">
+            <h1>Introverted, Sensing, Thinking, Judging.</h1>
+            <p>Sifat</p>
+            <ul>
+              <li>Serius, tenang, stabil dan damai.</li>
+              <li>Senang pada fakta, logis, obyektif, praktis dan realistis.</li>
+              <li>Task oriented, tekun, teratur, menepati janji, dapat diandalkan dan bertanggung jawab.</li>
+              <li>Pendengar yang baik, setia, hanya mau berbagi dengan orang dekat.</li>
+              <li>Memegang aturan, standar dan prosedur dengan teguh.</li>
+            </ul>
+            <p>Saran pengembangan</p>
+            <ul>
+              <li>Belajarlah memahami perasaan dan kebutuhan orang lain.</li>
+              <li>Kurangi keinginan untuk mengontrol orang lain atau memerintah mereka untuk menegakkan aturan.</li>
+              <li>Lihatlah lebih banyak sisi positif pada orang lain atau hal lainnya.</li>
+              <li>Terbukalah terhadap perubahan.</li>
+            </ul>
+            <p>Saran profesi</p> 
+            <h6>Bidang Manajemen, Polisi, Intelijen, Hakim, Pengacara, Dokter, Akuntan (Staf
+              Keuangan), Programmer atau yang berhubungan dengan IT, System Analyst, Pemimpin Militer
+            </h6>
+            <p>Pasangan/Partner Alami</p>
+            <h6>ESFP atau ESTP</h6>
+          </div>
+  
+  
+          <div class="none" id="ISFJ">
+            <h1>Introverted, Sensing, Feeling, Judging.</h1>
+            <p>Sifat</p>
+            <ul>
+              <li>Penuh pertimbangan, hati-hati, teliti dan akurat.</li>
+              <li>Serius, tenang, stabil namun sensitif.</li>
+              <li>Ramah, perhatian pada perasaan dan kebutuhan orang lain, setia, kooperatif, pendengar yang baik.</li>
+              <li>Punya kemampuan mengorganisasi, detail, teliti, sangat bertanggung jawab dan bisa diandalkan.</li>
+            </ul>
+            <p>Saran pengembangan</p>
+            <ul>
+              <li>Lihat lebih dalam, lebih antusias, dan lebih semangat.</li>
+              <li>Kurangi keinginan untuk mengontrol orang lain atau memerintah mereka untuk menegakkan aturan.</li>
+              <li>Belajarlah mengatakan tidak. Jangan menyenangkan semua orang atau Anda dianggap plin plan.</li>
+            </ul>
+            <p>Saran profesi</p> 
+            <h6>Architect, Interior Designer, Perawat, Administratif, Designer, Child Care, Konselor,
+              Back Office Manager, Penjaga Toko / Perpustakaan, Dunia Perhotelan.                    
+            </h6>
+            <p>Pasangan/Partner Alami</p>
+            <h6>ESFP atau ESTP</h6>
+          </div>
+  
+  
+          <div class="none" id="ISTP">
+            <h1>Introverted, Sensing, Thinking, Perceiving.</h1>
+            <p>Sifat</p>
+            <ul>
+              <li>Tenang, pendiam, cenderung kaku, dingin, hati-hati, penuh pertimbangan.</li>
+              <li>Logis, rasional, kritis, obyektif, mampu mengesampingkan perasaan.</li>
+              <li>Mampu menghadapi perubahan mendadak dengan cepat dan tenang.</li>
+              <li>Percaya diri, tegas dan mampu menghadapi perbedaan maupun kritik.</li>
+              <li>Mampu menganalisa, mengorganisir, dan mendelegasikan.</li>
+              <li>Problem solver yang baik terutama untuk masalah teknis, dan keadaan mendadak.</li>
+            </ul>
+            <p>Saran pengembangan</p>
+            <ul>
+              <li>Observasilah kehidupan sosial, apa yang membuat orang marah, cinta, senang, termotivasi, dan terapkan pada hubungan Anda.</li>
+              <li>Belajarlah untuk mengenali perasaan Anda dan mengekspresikannya.</li>
+              <li>Jadilah orang yang lebih terbuka, keluar dari zona nyaman, eksplorasi ide baru, dan berdiskusi dengan orang lain.</li>
+              <li>Jangan mencari-cari kesalahan orang hanya untuk menyelesaikan masalahnya.</li>
+              <li>Jangan menyimpan informasi yang harusnya dibagi dan belajarlah mempercayakan tanggungjawab pada orang lain.</li>
+            </ul>
+            <p>Saran profesi</p> 
+            <h6>Polisi, Ahli Forensik, Programmer, Ahli Komputer, System Analyst, Teknisi, Insinyur,
+              Mekanik, Pilot, Atlit, Entrepreneur</h6>                          
+            <p>Pasangan/Partner Alami</p>
+            <h6>ESTJ atau ENTJ</h6>
+          </div>
+  
+  
+          <div class="none" id="ISFP">
+            <h1>Introverted, Sensing, Feeling, Perceiving.</h1>
+            <p>Sifat</p>
+            <ul>
+              <li>Berpikiran simpel, dan praktis, fleksibel, sensitif, ramah, tidak menonjolkan diri, rendah hati pada kemampuannya.</li>
+              <li>Menghindari konflik, tidak memaksakan pendapat atau nilai-nilainya pada orang lain.</li>
+              <li>Biasanya tidak mau memimpin tetapi menjadi pengikut dan pelaksana yang setia.</li>
+              <li>Seringkali santai menyelesaikan sesuatu, karena sangat menikmati apa yang terjadi saat ini.</li>
+              <li>Menunjukkan perhatian lebih banyak melalui tindakan dibandingkan kata-kata.</li>
+            </ul>
+            <p>Saran pengembangan</p>
+            <ul>
+              <li>Jangan takut pada penolakan dan konflik. Anda tidak perlu menyenangkan semua orang.</li>
+              <li>Cobalah untuk mulai memikirkan dampak jangka panjang dari keputusan-keputusan kecil di hari ini.</li>
+              <li>Asah dan kembangkan sisi kreatifitas dan seni dalam diri Anda sebagai modal bagus dalam diri Anda.</li>
+              <li>Cobalah untuk lebih terbuka dan mengekspresikan perasaan Anda.</li>
+            </ul>
+            <p>Saran profesi</p> 
+            <h6>Seniman, Designer, Pekerja Sosial, Konselor, Psikolog, Guru, Aktor, Bidang
+              Hospitality</h6>                          
+            <p>Pasangan/Partner Alami</p>
+            <h6>ESFJ atau ENFJ</h6>
+          </div>
+  
+  
+          <div class="none" id="INFJ">
+            <h1>Introverted, iNtuitive, Feeling, Judging.</h1>
+            <p>Sifat</p>
+            <ul>
+              <li>Perhatian, empati, sensitif, dan berkomitmen terhadap sebuah hubungan.</li>
+              <li>Sukses karena ketekunan, originalitas dan keinginan kuat untuk melakukan apa saja yang diperlukan termasuk memberikan yg terbaik dalam pekerjaan.</li>
+              <li>Idealis, perfeksionis, memegang teguh prinsip.</li>
+              <li>Visioner, penuh ide, kreatif, suka merenung dan inspiring.</li>
+              <li>Biasanya diikuti dan dihormati karena kejelasan visi serta dedikasi pada hal-hal baik.</li>
+            </ul>
+            <p>Saran pengembangan</p>
+            <ul>
+              <li>Seimbangkan cara pandang Anda. Jangan hanya melihat sisi negatif dan resiko. Namun, lihatlah sisi positif dan peluangnya.</li>
+              <li>Bersabarlah, jangan mudah marah dan menyalahkan orang lain atau situasi.</li>
+              <li>Rileks dan jangan terus menerus berfikir atau menyelesaikan tanggungjawab.</li>
+            </ul>
+            <p>Saran profesi</p> 
+            <h6>Pengajar, Psikolog, Dokter, Konselor, Pekerja Sosial, Fotografer, Seniman,
+              Designer, Child Care.</h6>                          
+            <p>Pasangan/Partner Alami</p>
+            <h6>ESFP atau ESTP</h6>
+          </div>
+  
+  
+          <div class="none" id="INTJ">
+            <h1>Introverted, iNtuitive, Thinking and Judging.</h1>
+            <p>Sifat</p>
+            <ul>
+              <li>Visioner, punya perencanaan praktis, dan biasanya memiliki ide-ide original serta dorongan kuat untuk mencapainya.</li>
+              <li>Mandiri dan percaya diri.</li>
+              <li>Punya kemampuan analisa yang bagus serta menyederhanakan sesuatu yang rumit dan abstrak menjadi sesuatu yang praktis, mudah dipahami, dan dipraktekkan.</li>
+              <li>Skeptis, kritis, logis, menentukan (determinatif) dan kadang keras kepala.</li>
+              <li>Punya keinginan untuk berkembang serta selalu ingin lebih maju dari orang lain.</li>
+              <li>Kritik dan konflik tidak menjadi masalah berarti.</li>
+            </ul>
+            <p>Saran pengembangan</p>
+            <ul>
+              <li>Belajarlah mengungkapkan emosi dan perasaan Anda.</li>
+              <li>Cobalah untuk lebih terbuka pada dunia luar, banyak bergaul, banyak belajar, banyak membaca, mengunjungi banyak tempat, eksplorasi hal baru, dan memperluas wawasan.</li>
+              <li>Hindari perdebatan tidak penting.</li>
+              <li>Belajarlah untuk berempati, memberi perhatian dan lebih peka terhadap orang lain.</li>
+            </ul>
+            <p>Saran profesi</p> 
+            <h6>Peneliti, Ilmuwan, Insinyur, Teknisi, Pengajar, Profesor, Dokter, Research, dan Development, Business Analyst, System Analyst, Pengacara, Hakim, Programmers, Posisi Strategis dalam organisasi.</h6>                          
+            <p>Pasangan/Partner Alami</p>
+            <h6>ENFP atau ENTP</h6>
+          </div>
+  
+  
+          <div class="none" id="INFP">
+            <h1>Introverted, iNtuitive, Feeling, Perceiving</h1>
+            <p>Sifat</p>
+            <ul>
+              <li>Sangat perhatian dan peka dengan perasaan orang lain.</li>
+              <li>Penuh dengan antusiasme dan kesetiaan, tapi biasanya hanya untuk orang dekat.</li>
+              <li>Peduli pada banyak hal. Cenderung mengambil terlalu banyak dan menyelesaikan sebagian.</li>
+              <li>Cenderung idealis dan perfeksionis.</li>
+              <li>Berpikir win-win solution, mempercayai dan mengoptimalkan orang lain.</li>
+            </ul>
+            <p>Saran pengembangan</p>
+            <ul>
+              <li>Belajarlah menghadapi kritik. Jika baik maka kritik itu bisa membangun Anda, namun jika tidak abaikan saja. Jangan ragu pula untuk bertanya dan minta saran.</li>
+              <li>Belajarlah untuk bersikap tegas. Jangan selalu berperasaan dan menyenangkan orang dengan tindakan baik. Bertindak baik itu berbeda dengan bertindak benar.</li>
+              <li>Jangan terlalu menyalahkan diri dan bersikap terlalu keras pada diri sendiri. Kegagalan adalah hal biasa dan semua orang pernah mengalaminya.</li>
+              <li>Jangan terlalu baik pada orang lain tapi melupakan diri sendiri. Anda juga punya tanggungjawab untuk berbuat baik pada diri sendiri.</li>
+            </ul>
+            <p>Saran profesi</p> 
+            <h6>Penulis, Sastrawan, Konselor, Psikolog, Pengajar, Seniman, Rohaniawan, Bidang
+              Hospitality</h6>                          
+            <p>Pasangan/Partner Alami</p>
+            <h6>ENFJ atau ESFJ</h6>
+          </div>
+  
+  
+          <div class="none" id="INTP">
+            <h1>Introverted, iNtuitive, Thinking, Perceiving.</h1>
+            <p>Sifat</p>
+            <ul>
+              <li>Sangat menghargai intelektualitas dan pengetahuan. Menikmati hal-hal teoritis dan ilmiah.</li>
+              <li>Senang memecahkan masalah dengan logika dan analisa.</li>
+              <li>Diam dan menahan diri. Lebih suka bekerja sendiri</li>
+              <li>Cenderung kritis, skeptis, mudah curiga dan pesimis.</li>
+              <li>Tidak suka memimpin dan bisa menjadi pengikut yang tidak banyak menuntut.</li>
+              <li>Cenderung memiliki minat yang jelas.</li>
+              <li>Membutuhkan karir dimana minatnya bisa berkembang dan bermanfaat.</li>
+              <li>Jika menemukan sesuatu yang menarik minatnya, ia akan sangat serius dan antusias menekuninya.</li>
+            </ul>
+            <p>Saran pengembangan</p>
+            <ul>
+              <li>Belajarlah membangun hubungan dengan orang lain. Belajar berempati, mendengar aktif, memberi perhatian dan bertukar pendapat.</li>
+              <li>Relaks. Jangan terlalu banyak berpikir. Nikmati hidup Anda tanpa harus bertanya mengapa dan bagaimana.</li>
+              <li>Cobalah menemukan satu ide, merencanakan dan mewujudkannya.</li>
+              <li>Jangan terlalu sering berganti-ganti ide tetapi tidak satupun yang terwujud.</li>
+            </ul>
+            <p>Saran profesi</p> 
+            <h6>Ilmuwan, Fotografer, Programmer, Ahli komputer, System Analyst, Penulis Buku Teknis, Ahli Forensik, Jaksa, Pengacara, Teknisi</h6>                          
+            <p>Pasangan/Partner Alami</p>
+            <h6>ENTJ atau ESTJ</h6>
+          </div>
+  
+  
+          <div class="none" id="ESTP">
+            <h1>Extroverted, Sensing, Thinking, Perceiving</h1>
+            <p>Sifat</p>
+            <ul>
+              <li>Spontan, Aktif, Enerjik, Cekatan, Cepat, Sigap, Antusias, Fun dan penuh variasi.</li>
+              <li>Komunikator, asertif, to the point, ceplas-ceplos, berkarisma, punya interpersonal skill yang baik.</li>
+              <li>Baik dalam pemecahan masalah langsung di tempat. Mampu menghadapi masalah, konflik dan kritik. Tidak khawatir, menikmati apapun yang terjadi.</li>
+              <li>Cenderung untuk menyukai sesuatu yang mekanistis, kegiatan bersama dan olahraga.</li>
+              <li>Mudah beradaptasi, toleran, pada umumnya konservatif tentang nilai-nilai.</li>
+              <li>Tidak suka penjelasan terlalu panjang. Paling baik dalam hal-hal nyata yang dapat dilakukan.</li>
+            </ul>
+            <p>Saran pengembangan</p>
+            <ul>
+              <li>Belajarlah memahami perasaan dan pemikiran orang lain terutama saat bicara dengan mereka.</li>
+              <li>Belajarlah untuk sabar, menikmati proses, tidak semua hal bisa dicapai dengan cepat.</li>
+              <li>Sesekali luangkan waktu untuk merenung dan merencanakan masa depan Anda.</li>
+              <li>Cobalah untuk mencatat pengamatan-pengamatan Anda termasuk detailnya.</li>
+            </ul>
+            <p>Saran profesi</p> 
+            <h6>Marketing, Sales, Polisi, Entrepreneur, Pialang Saham, Technical Support</h6>                          
+            <p>Pasangan/Partner Alami</p>
+            <h6>ISFJ atau ISTJ</h6>
+          </div>
+  
+  
+          <div class="none" id="ESFP">
+            <h1>Extroverted, Sensing, Feeling, Perceiving</h1>
+            <p>Sifat</p>
+            <ul>
+              <li>Outgoing, easygoing, mudah berteman, bersahabat, sangat sosial, ramah, hangat, dan menyenangkan.</li>
+              <li>Optimis, ceria, antusias, fun, menghibur, suka menjadi perhatian.</li>
+              <li>Punya interpersonal skill yang baik, murah hati, mudah simpatik dan mengenali perasaan orang lain. Menghindari konflik dan menjaga keharmonisan suatu hubungan.</li>
+              <li>Mengetahui apa yang terjadi di sekelilingnya dan ikut serta dalam kegiatan tersebut.</li>
+              <li>Sangat baik dalam keadaan yang membutuhkan common sense, tindakan cepat dan keterampilan praktis.</li>
+            </ul>
+            <p>Saran pengembangan</p>
+            <ul>
+              <li>Jangan terburu-buru dalam mengambil keputusan.</li>
+              <li>Belajarlah untuk fokus dan tidak mudah berubah-ubah terutama untuk hal yang penting.</li>
+              <li>Jangan menyenangkan semua orang. Begitu pula sebaliknya, tidak semua orang bisa menyenangkan Anda.</li>
+              <li>Belajarlah menghadapi kritik dan konflik. Jangan lari.</li>
+              <li>Anda punya kecenderungan materialistis. Hati-hati, tidak semua hal bisa diukur dengan materi ataupun uang.</li>
+            </ul>
+            <p>Saran profesi</p> 
+            <h6>Entertainer, Seniman, Marketing, Konselor, Designer, Tour Guide, Bidang Anak-anak, Bidang Hospitality</h6>                          
+            <p>Pasangan/Partner Alami</p>
+            <h6>ISTJ atau ISFJ</h6>
+          </div>
+  
+  
+          <div class="none" id="ENFP">
+            <h1></h1>
+            <p>Sifat</p>
+            <ul>
+              <li>Ramah, hangat, enerjik, optimis, antusias, semangat tinggi, fun.</li>
+              <li>Imaginatif, penuh ide, kreatif, inovatif.</li>
+              <li>Mampu beradaptasi dengan beragam situasi dan perubahan.</li>
+              <li>Pandai berkomunikasi, senang bersosialisasi dan membawa suasana positif.</li>
+              <li>Mudah membaca perasaan dan kebutuhan orang lain.</li>
+            </ul>
+            <p>Saran pengembangan</p>
+            <ul>
+              <li>Belajarlah untuk fokus, disiplin, tegas dan konsisten</li>
+              <li>Belajarlah untuk menghadapi konflik dan kritik.</li>
+              <li> Pikirkan kebutuhan diri sendiri. Jangan melupakannya karena terlalu peduli pada kebutuhan orang lain.</li>
+              <li>Jangan terlalu boros. Belajarlah untuk mengelola keuangan sedikit demi sedikit.</li>
+            </ul>
+            <p>Saran profesi</p> 
+            <h6>Konselor, Psikolog, Entertainer, Pengajar, Motivator, Presenter, Reporter, MC, Seniman, Hospitality</h6>                          
+            <p>Pasangan/Partner Alami</p>
+            <h6>INTJ atau INFJ</h6>
+          </div>
+  
+  
+          <div class="none" id="ENTP">
+            <h1>Extroverted, iNtuitive, Thinking, Perceiving</h1>
+            <p>Sifat</p>
+            <ul>
+              <li>Gesit, kreatif, inovatif, cerdik, logis, baik dalam banyak hal.</li>
+              <li>Banyak bicara dan punya kemampuan debat yang baik. Bisa berargumentasi untuk senang-senang saja tanpa merasa bersalah.</li>
+              <li>Fleksibel. Punya banyak cara untuk memecahkan masalah dan tantangan.</li>
+              <li>Kurang konsisten. Cenderung untuk melakukan hal baru yang menarik hati setelah melakukan sesuatu yang lain.</li>
+              <li>Punya keinginan kuat untuk mengembangkan diri.</li>
+            </ul>
+            <p>Saran pengembangan</p>
+            <ul>
+              <li>Cobalah untuk win-win solution. Jangan ingin menang sendiri.</li>
+              <li>Belajarlah untuk disiplin dan konsisten.</li>
+              <li>Hindari perdebatan tidak penting.</li>
+              <li>Belajarlah untuk sedikit waspada. Seimbangkan cara pandang Anda agar tidak terlalu optimis dan mengambil resiko yang tidak realistis.</li>
+              <li>Belajarlah untuk memberi perhatian pada perasaan orang lain.</li>
+            </ul>
+            <p>Saran profesi</p> 
+            <h6>Pengacara, Psikolog, Konsultan, Ilmuwan, Aktor,Marketing, Programmer, Fotografer</h6>                          
+            <p>Pasangan/Partner Alami</p>
+            <h6>INFJ atau INTJ</h6>
+          </div>
+  
+  
+          <div class="none" id="ESTJ">
+            <h1>Extroverted, Sensing, Thinking, Judging</h1>
+            <p>Sifat</p>
+            <ul>
+              <li>Praktis, realistis, berpegang pada fakta, dengan dorongan alamiah untuk bisnis dan mekanistis.</li>
+              <li>Sangat sistematis, procedural dan terencana.</li>
+              <li>Disiplin, on time dan pekerja keras.</li>
+              <li>Konservatif dan cenderung kaku.</li>
+              <li>Tidak tertarik pada subject yang tidak berguna baginya, tapi dapat menyesuaikan diri jika diperlukan.</li>
+              <li>Senang mengorganisir sesuatu. Bisa menjadi administrator yang baik jika mereka ingat untuk memperhatikan perasaan dan perspektif orang lain.</li>
+            </ul>
+            <p>Saran pengembangan</p>
+            <ul>
+              <li>Kurangi keinginan untuk mengontrol dan memaksa orang lain.</li>
+              <li>Belajarlah untuk mengontrol emosi dan amarah Anda.</li>
+              <li>Cobalah untuk introspeksi diri dan meluangkan waktu sejenak untuk merenung.</li>
+              <li>Belajarlah untuk lebih sabar dan low profile</li>
+              <li>Belajarlah untuk memahami orang lain.</li>
+            </ul>
+            <p>Saran profesi</p> 
+            <h6>Militer, Manajer, Polisi, Hakim, Pengacara, Guru, Sales, Auditor, Akuntan, System Analyst</h6>                          
+            <p>Pasangan/Partner Alami</p>
+            <h6>ISTP atau INTP</h6>
+          </div>
+  
+  
+          <div class="none" id="ESFJ">
+            <h1>Extroverted, Sensing, Feeling,Judging</h1>
+            <p>Sifat</p>
+            <ul>
+              <li>Hangat, banyak bicara, populer, dilahirkan untuk bekerjasama, suportif dan anggota kelompok yang aktif.</li>
+              <li>Membutuhkan keseimbangan dan baik dalam menciptakan harmoni.</li>
+              <li>Selalu melakukan sesuatu yang manis bagi orang lain. Kerja dengan baik dalam situasi yang mendukung dan memujinya.</li>
+              <li>Santai, easy going, sederhana, tidak berfikir panjang.</li>
+              <li>Teliti dan rajin merawat apa yang ia miliki.</li>
+            </ul>
+            <p>Saran pengembangan</p>
+            <ul>
+              <li>Jangan mengorbankan diri hanya untuk menyenangkan orang lain.</li>
+              <li>Jangan mengukur harga diri Anda dari perlakuan, penghargaan dan pujian orang lain.</li>
+              <li>Mintalah pertimbangan orang lain dalam mengambil keputusan. Belajarlah untuk lebih tegas.</li>
+              <li>Terima tanggung jawab hidup dan belajarlah untuk lebih dewasa. Jangan mengasihani diri sendiri.</li>
+              <li>Hadapi kritik dan konflik, jangan lari.</li>
+            </ul>
+            <p>Saran profesi</p> 
+            <h6>Perencana Keuangan, Perawat, Guru, Bidang anak-anak, Konselor, Administratif, Hospitality</h6>                          
+            <p>Pasangan/Partner Alami</p>
+            <h6>ISFP atau INFP</h6>
+          </div>
+  
+  
+          <div class="none" id="ENFJ">
+            <h1>Extroverted, iNtuitive, Feeling, Judging</h1>
+            <p>Sifat</p>
+            <ul>
+              <li>Kreatif, imajinatif, peka, sensitive, loyal.</li>
+              <li>Pada umumnya peduli pada apa kata orang atau apa yang orang lain inginkan dan cenderung melakukan sesuatu dengan memperhatikan perasaan orang lain.</li>
+              <li>Pandai bergaul, meyakinkan, ramah, fun, populer, simpatik. Responsif pada kritik dan pujian.</li>
+              <li>Menyukai variasi dan tantangan baru.</li>
+              <li>Butuh apresiasi dan penerimaan.</li>
+            </ul>
+            <p>Saran pengembangan</p>
+            <ul>
+              <li>Jangan mengorbankan diri hanya untuk menyenangkan orang lain.</li>
+              <li>Jangan mengukur harga diri Anda dari perlakuan orang lain. Jangan mudah kecewa jika mereka tidak seperti yang Anda inginkan.</li>
+              <li>Belajarlah untuk tegas dan mengambil keputusan. Menghadapi kritik dan konflik.</li>
+              <li>Jangan terlalu bersikap keras terhadap diri sendiri.</li>
+            </ul>
+            <p>Saran profesi</p> 
+            <h6>Konsultan, Psikolog, Konselor, Pengajar, Marketing, HRD, Event Coordinator, Entertainer, Penulis, Motivator</h6>                          
+            <p>Pasangan/Partner Alami</p>
+            <h6>INFP atau ISFP</h6>
+          </div>
+  
+  
+          <div class="none" id="ENTJ">
+            <h1>Extroverted, iNtuitive, Thinking, Judging</h1>
+            <p>Sifat</p>
+          <ul>
+            <li>Tegas, asertif, to the point, jujur terus terang, obyektif, kritis, dan punya standard tinggi.</li>
+            <li>Dominan, kuat kemauannya, perfeksionis dan kompetitif.</li>
+            <li>Tangguh, disiplin, dan sangat menghargai komitmen.</li>
+            <li>Cenderung menutupi perasaan dan menyembunyikan kelemahan.</li>
+            <li>Berkarisma, komunikasi baik, mampu menggerakkan orang.</li>
+            <li>Pemimpin berbakat.</li>
+          </ul>
+          <p>Saran pengembangan</p>
+          <ul>
+            <li>Belajarlah untuk relaks. Tidak perlu perfeksionis dan selalu kompetitif dengan semua orang.</li>
+            <li>Ungkapkan perasaan Anda. Menyatakan perasaan bukanlah kelemahan.</li>
+            <li>Belajarlah mengelola emosi Anda. Jangan mudah marah.</li>
+            <li>Belajarlah untuk menghargai dan mengapresiasi orang lain.</li>
+            <li>Jangan terlalu arogan dan menganggap remeh orang lain. Lihat sisi positifnya. Jangan hanya melihat benar dan salah saja.</li>
+          </ul>
+          <p>Saran profesi</p> 
+          <h6>Entrepreneur, Pengacara, Hakim, Konsultan, Pemimpin Organisasi, Business analyst, Bidang Finansial</h6>                          
+          <p>Pasangan/Partner Alami</p>
+          <h6>INTP atau ISTP</h6>
+        </div>
+      </div>
+    </div>
+      
+  </section>
+
+  <script>
+    const button = document.getElementById('showDiv');
+
+    // Add an onclick event handler to the selected element
+    button.onclick = function() {
+        document.getElementById('test').style.display = 'flex';
+    };
+
+    var aba = "{{hasil}}";
+    document.getElementById(aba).style.display = "inline";
+
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+  </body>
+</html>

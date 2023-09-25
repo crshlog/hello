@@ -7,6 +7,15 @@
   font-family: 'Exo 2', sans-serif;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+body, html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 body 
 {
   font-size: 135%;
@@ -60,9 +69,8 @@ ul
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
+  background-color: transparent !important;
 }
-
-
 
 .section
 {
@@ -100,7 +108,7 @@ ul
 
 #moon
 {
-  position: absolute;
+  position: fixed;  
   top: 0;
   left: 0;
   width: 100%;
@@ -122,7 +130,8 @@ ul
 
 #exp
 {
-  position:absolute ;
+  transition: all .1s ease-in-out;
+  position:absolute;
   text-decoration: none;
   border-radius: 40px;
   background: #9a9bd6;
@@ -130,7 +139,7 @@ ul
   font-size: 1.2em;
   padding: 8px;
   transition: all 1s ease!important;
-  
+  bottom : 48%;
 }
 
 
@@ -138,7 +147,7 @@ ul
 {
   position: relative;
   padding: 100px;
-  background-color: #ae3eca;
+  background-color: #1c0522;
   padding-bottom: 10000px;
   transition: all 0.2s linear;
 }
@@ -156,11 +165,9 @@ ul
   color: #ffff;
 }
 
-#color
-{
-  background: #1c0522;
-}
 
+
+  
 
 
 @media screen and (orientation: landscape){
@@ -185,17 +192,24 @@ ul
   }
   a
   {
+    transition: all .5s ease-in-out;
     text-decoration: none;
     padding: 6px 15px;
     color: rgb(255, 255, 255);
     border-radius: 20px;
+    background-color: #aeafd12a;
   }
 
   a.hvr:hover, a.active
   {
-    transition: all .5s ease-in-out;
     background: #ffff;
     color: #2b1055;
+  }
+
+  #exp:hover
+  { 
+    background-color:#d1d1fa;
+    transform: scale(1.001);
   }
 
   #stars
@@ -203,11 +217,7 @@ ul
     z-index: -3;
   }
 
-  #moon
-  {
-    position: fixed;  
-    
-  }
+
 }
 
 /*font-family: 'Poppins', sans-serif;

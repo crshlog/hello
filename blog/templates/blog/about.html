@@ -3,17 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <title>about</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         {% load static %}
-        <link rel="stylesheet" type="text/css" href="{% static 'blog/css/style_about.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'blog/css/about.css' %}">
     </head>
     <body>
         <header>
-            <h1 class="logo">Trivind</h1>
+            <a class="logo" href="/home/">Trivind</a>
             </script>
             <ul>
                 <li><a href="/home/" class="hvr">Home</a></li>
-                <!-- a href buat ngasih link ke suatu source-->
-                <li><a class="hvr" href="/test/">MBTI Test</a></li>
+                <li><a href="/test/" class="hvr">MBTI Test</a></li>
                 <li><a class="active">About</a></li>
             </ul>
 
@@ -24,15 +25,13 @@
                     <div class="menubar"></div>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">MBTI Test</a></li>
-                    <li><a class="dropdown-item" href="#">About</a></li>
-                    <li><a class="dropdown-item" href="#">Login</a></li>
+                    <li><a class="dropdown-item" href="/test/">MBTI Test</a></li>
+                    <li><a class="dropdown-item" href="/home/">home</a></li>
                 </ul>
             </div>
         </header>
         <section class="color">
             <div class="section">
-                <img src="{% static 'stars.png' %}" id="stars">
                 <img src="{% static 'blog/halo.png' %}" id="blek">
             </div>
         </section>

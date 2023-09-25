@@ -10,44 +10,45 @@ class ContactForm1(ModelForm):
     model = tanya1
     fields = '__all__'
     widgets = {
-      'a' : forms.RadioSelect(),
-	  'b' : forms.RadioSelect(),
-	  'c' : forms.RadioSelect(),
-	  'd' : forms.RadioSelect(),
-	  'e' : forms.RadioSelect(),
+    'a' : forms.RadioSelect(attrs={'class': "radio"}),
+	  'b' : forms.RadioSelect(attrs={'class': "radio"}),
+	  'c' : forms.RadioSelect(attrs={'class': "radio"}),
+	  'd' : forms.RadioSelect(attrs={'class': "radio"}),
+	  'e' : forms.RadioSelect(attrs={'class': "radio"}),
     } 
+  
 class ContactForm2(ModelForm):
   class Meta:
     model = tanya2
     fields = '__all__'
     widgets = {
-      'f' : forms.RadioSelect(),
-	  'g' : forms.RadioSelect(),
-	  'h' : forms.RadioSelect(),
-	  'i' : forms.RadioSelect(),
-	  'j' : forms.RadioSelect(),
+    'f' : forms.RadioSelect(attrs={'class': "radio"}),
+	  'g' : forms.RadioSelect(attrs={'class': "radio"}),
+	  'h' : forms.RadioSelect(attrs={'class': "radio"}),
+	  'i' : forms.RadioSelect(attrs={'class': "radio"}),
+	  'j' : forms.RadioSelect(attrs={'class': "radio"}),
     } 
 class ContactForm3(ModelForm):
   class Meta:
     model = tanya3
     fields = '__all__'
     widgets = {
-      'k' : forms.RadioSelect(),
-	  'l' : forms.RadioSelect(),
-	  'm' : forms.RadioSelect(),
-	  'n' : forms.RadioSelect(),
-	  'o' : forms.RadioSelect(),
+    'k' : forms.RadioSelect(attrs={'class': "radio"}),
+	  'l' : forms.RadioSelect(attrs={'class': "radio"}),
+	  'm' : forms.RadioSelect(attrs={'class': "radio"}),
+	  'n' : forms.RadioSelect(attrs={'class': "radio"}),
+	  'o' : forms.RadioSelect(attrs={'class': "radio"}),
     } 
 class ContactForm4(ModelForm):
   class Meta:
     model = tanya4
     fields = '__all__'
     widgets = {
-	  'p' : forms.RadioSelect(),
-	  'q' : forms.RadioSelect(),
-	  'r' : forms.RadioSelect(),
-	  's' : forms.RadioSelect(),
-	  't' : forms.RadioSelect()        
+	  'p' : forms.RadioSelect(attrs={'class': "radio"}),
+	  'q' : forms.RadioSelect(attrs={'class': "radio"}),
+	  'r' : forms.RadioSelect(attrs={'class': "radio"}),
+	  's' : forms.RadioSelect(attrs={'class': "radio"}),
+	  't' : forms.RadioSelect(attrs={'class': "radio"}),
     }     
     	  
 
