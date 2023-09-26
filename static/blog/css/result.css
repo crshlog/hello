@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Exo 2', sans-serif;
+  zoom: 1.05;
 }
 
 ::-webkit-scrollbar {
@@ -30,17 +31,24 @@ header
   position: absolute;
   top: 0;
   width: 0;
-  padding: 30px 100px;
+  padding: 30px 30px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 10000;
+  zoom: 1.4;
 }
 
 header .dropdown
 {
   position: relative;
+}
+
+.drop
+{
+  zoom: 1.3;
+  transform: translate(-3em, -2px) !important;
 }
 
 .menubar
@@ -118,6 +126,7 @@ header ul
 #result h6
 {
   margin-bottom: 1rem;
+  zoom: 1.7;
 }
 
 .none p
@@ -217,8 +226,10 @@ h6{
   margin-bottom: 0px;
 }
 
-#showDiv{
-  margin-bottom: 30px;
+#showDiv, #btn
+{
+  zoom: 1.5;
+  margin: 1em;
 }
 
 hr
@@ -250,10 +261,21 @@ hr
 
 
 @media screen and (orientation: landscape){
+  *
+  {
+    zoom: 1 !important;
+  }
   body
   {
     font-size: 90%;
   }
+
+  header
+  {
+    zoom: 1;
+    padding: 30px 70px;
+  }  
+
   header .dropdown
   {
     display: none;
@@ -297,7 +319,14 @@ hr
     background: #ffffffaf;
     color: #2b1055;
   }
+  
+  #showDiv, #btn, h6
+  {
+    zoom: 1;
+  }
 }
+
+
 
 /*font-family: 'Poppins', sans-serif;
 {font-family: 'Exo 2', sans-serif;}

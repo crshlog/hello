@@ -57,7 +57,29 @@ class tanya4(models.Model):
   def __str__(self):
     return self.k
 
-
+class quis(models.Model):
+  choice=[(0,'ya'),(1, 'tidak')]
+  a1 = models.IntegerField(verbose_name = "Apakah kamu merasa malas (atau bahkan sangat malas) untuk mengerjakan tugas-tugas?",choices=choice,default= None)
+  b1 = models.IntegerField(verbose_name = "Apakah kamu merasa takut untuk memulai tugas? ",choices=choice,default= None)
+  c1 = models.IntegerField(verbose_name = "Apakah kamu sering merasa tidak mampu mengerjakan tugas?",choices=choice,default= None)
+  d1 = models.IntegerField(verbose_name = "Apakah kamu sering menganggap remeh tugas?",choices=choice,default= None)
+  e1 = models.IntegerField(verbose_name = "Apakah kamu kesulitan membagi waktu?",choices=choice,default= None)
+  f1 = models.IntegerField(verbose_name = "Apakah kamu selalu menunggu menit terakhir pengumpulan tugas karena kamu merasa lebih baik jika bekerja dibawah tekanan?",choices=choice,default= None)
+  g1 = models.IntegerField(verbose_name = "Apakah kamu merasa kesulitan untuk menentukan prioritas",choices=choice,default= None)
+  h1 = models.IntegerField(verbose_name = "Apakah kamu kesulitan keluar dari zona nyaman?",choices=choice,default= None)
+  i1 = models.IntegerField(verbose_name = "Kenapa kamu merasa takut untuk berinteraksi? Apakah karena merasa kurang pede?",choices=choice,default= None)
+  j1 = models.IntegerField(verbose_name = "Apakah karena takut akan pandangan orang lain terhadap dirimu?",choices=choice,default= None)
+  k1 = models.IntegerField(verbose_name = "Apakah merasa rendah diri  menjadi faktor anda untuk sulit berinteraksi?",choices=choice,default= None)
+  l1 = models.IntegerField(verbose_name = "Apakah karena tidak ada orang yang sefrekuensi disekitarmu ?",choices=choice,default= None)
+  m1 = models.IntegerField(verbose_name = "Apakah karena kejadian di masa lampau membuatmu sulit berinteraksi dengan lingkungan sekitarmu?",choices=choice,default= None)
+  n1 = models.IntegerField(verbose_name = "Apakah anda masih merasa takut untuk memulai interaksi?",choices=choice,default= None)
+  o1 = models.IntegerField(verbose_name = "Apakah kamu saat ini berada di lingkungan yang menurutmu baru?",choices=choice,default= None)
+  p1 = models.IntegerField(verbose_name = "Apakah kamu merasa ada di lingkungan pertemanan yang buruk?",choices=choice,default= None)
+  q1 = models.IntegerField(verbose_name = "Apakah kamu merasa ada teman yang mungkin bisa menjadi lebih dekat, tetapi kamu tidak yakin bagaimana mendekatinya?",choices=choice,default= None)
+  r1 = models.IntegerField(verbose_name = "Apakah kamu merasa minder, rendah diri atau takut untuk memulai pertemanan?",choices=choice,default= None)
+  s1 = models.IntegerField(verbose_name = "Apakah baru-baru ini kamu kehilangan seseorang/sesuatu yang menurutmu berharga? (Dan tidak memungkinkan untuk mengembalikannya)",choices=choice,default= None)
+  def __str__(self):
+    return self.k
   
 
   

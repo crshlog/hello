@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from .forms import *
 
 result = ['I','S','T','J']
+quisans = ['a1', 'c1', 'g1']
 
 def home(request):
   return render (request, 'blog/homepage.html' )
@@ -51,10 +52,10 @@ def test(request):
       p = form4.cleaned_data
       x1()
       x2()
-      x3()
       x4()
+      x3()
 
-      return render (request, 'blog/home.html', {'hasil' : ''.join(result)})
+      return render (request, 'blog/result.html', {'hasil' : ''.join(result)})
     #                    var aba = "{{aba}}";
     #                if(aba == 'none'){
      #                   document.getElementById("mountainb").style.display = "none";
@@ -74,3 +75,22 @@ def hasil(request):
 
 def loli(request):
   return render (request, 'blog/loli.html')
+
+def quisi(request):
+  quisans.clear()
+  if request.method == 'POST':
+    form = Quis(request.POST)
+    if form.is_valid():
+      a = form.cleaned_data
+      for i in a:
+        if a[i] == 0:
+          quisans.append(i)
+
+      return render (request, 'blog/quires.html', {'quisans' : ','.join(quisans)})
+     
+  else:
+    form = Quis()
+  return render(request, 'blog/quis.html', {'form' : form})
+
+def res(request):
+  return render (request, 'blog/quires.html', {'quisans' : ','.join(quisans)})

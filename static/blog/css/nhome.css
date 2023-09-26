@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Exo 2', sans-serif;
+  zoom: 1.05;
 }
 
 ::-webkit-scrollbar {
@@ -30,17 +31,24 @@ header
   position: absolute;
   top: 0;
   width: 0;
-  padding: 30px 100px;
+  padding: 30px 30px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 10000;
+  zoom: 1.4;
 }
 
 header .dropdown
 {
   position: relative;
+}
+
+.drop
+{
+  zoom: 1.3;
+  transform: translate(-3em, -2px) !important;
 }
 
 .menubar
@@ -106,6 +114,12 @@ ul
   pointer-events: none;
 }
 
+#tree
+{
+  z-index: 11;
+  zoom: 0.8;
+}
+
 #moon
 {
   position: fixed;  
@@ -134,12 +148,14 @@ ul
   position:absolute;
   text-decoration: none;
   border-radius: 40px;
-  background: #9a9bd6;
+  background: aliceblue;
   color: #2b1055;
   font-size: 1.2em;
   padding: 8px;
   transition: all 1s ease!important;
   bottom : 48%;
+  zoom: 1.6;
+  z-index: 12;
 }
 
 
@@ -148,8 +164,8 @@ ul
   position: relative;
   padding: 100px;
   background-color: #1c0522;
-  padding-bottom: 10000px;
   transition: all 0.2s linear;
+  background-image: url('/static/blog/stars.png');
 }
 
 .secc h2
@@ -167,14 +183,27 @@ ul
 
 
 
+
   
 
 
 @media screen and (orientation: landscape){
+  *
+  {
+    zoom: 1;
+  }
+
   body
   {
     font-size: 90%;
   }
+
+  header
+  {
+    zoom: 1;
+    padding: 30px 70px;
+  }
+
   header .dropdown
   {
     display: none;
@@ -204,6 +233,11 @@ ul
   {
     background: #ffff;
     color: #2b1055;
+  }
+
+  #exp
+  {
+    zoom: 1;
   }
 
   #exp:hover

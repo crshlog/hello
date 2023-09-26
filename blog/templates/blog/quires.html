@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>mbti</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/quires.css' %}">
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="/home/">Trivind</a>
+      </script>
+      <ul>
+          <li><a href="/home/" class="hvr">Home</a></li>
+          <li><a href="/test/" class="hvr">MBTI Test</a></li>
+          <li><a href="/about/" class="hvr">About</a></li>
+      </ul>
+
+      <div class="dropdown dropstart">
+        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <div class="menubar"></div>
+          <div class="menubar"></div>
+          <div class="menubar"></div>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item mobile" href="/home/">home</a></li>
+          <li><a class="dropdown-item mobile" href="/about/">About</a></li>
+        </ul>
+
+      </div>
+    </header>
+    <section class="color">
+      <div class="section">
+        <img src="{% static 'blog/bg.jpg' %}"id="glx">
+        <div id="info">
+          <div id="center">
+            <p>Terimakasih sudah mengisinya</p>
+            <hr id="inpohr">
+            <p>berikut adalah kegiatan kegiatan yang dapat kamu lakukan untuk menghadapi masalhamu</p>
+            <a id="showDiv" class="btn btn-primary btn-sm" href="#test" role="button">Cari Tahu</a>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="test">
+        <div id="result">
+          <div class="none" id="a1">
+            <p>Coba aturan 5 detik. Caranya, hitung mundur dari 5 sampai 1 untuk mulai mengerjakan tugasmu saat merasa malas. Contohnya, ketika kamu asyik rebahan dan tidak segera mengerjakan tugas, cobalah hitung dari 5 sampai 1. Pada hitungan ke-1 segeralah bangun</p>
+          </div>
+
+          <div class="none" id="b1">
+            <p>Coba temukan akar dari ketakutanmu. Apakah kamu mungkin merasa tidak mampu mengerjakan tugas, atau alasan-alasan yang lain. Kemudian ambil langkah- langkah kecil dan praktis untuk mengatasi ketakutan tersebut.</p>
+            <p>Cobalah untuk tenang dan mulai melangkah, jangan terlalu banyak berpikir. Lakukan saja dulu</p>
+          </div>
+          
+          <div class="none" id="c1">
+            <p>Mulailah belajar sedikit demi sedikit untuk mengatasi rasa tidak mampu mengerjakan tugas. Caranya bisa dengan mulai banyak membaca atau mempelajari hal-hal yang belum kamu pahami. Kamu bisa minta tolong orang lain juga untuk membantumu dalam belajar</p>
+          </div>
+          
+          <div class="none" id="d1">
+            <p>Buatlah skala prioritas tugas (dari yang paling berat ke ringan) dan biasakan diri untuk tidak menganggap remeh tugas-tugasmu, entah ringan atau tidak. Pikirkan kembali konsekuensi apa yang akan terjadi jika kamu terus menunda pengerjaan tugasmu</p>
+            <p>Kamu bisa mengerjakan tugasmu jauh sebelum deadline, supaya hasil pekerjaanmu maksimal</p>
+          </div>
+          
+          <div class="none" id="e1">
+            <p>Buatlah jadwal kegiatan harianmu. Kamu bisa mengelompokkan kegiatan menjadi 3 skala: kegiatan penting, kegiatan biasa, dan kegiatan kurang penting. Ini akan membantu kamu mengetahui prioritas yang perlu kamu kerjakan terlebih dahulu.</p>
+          </div>
+          
+          <div class="none" id="f1">
+            <p>Hindari mengerjakan tugas tepat sebelum deadline. Karena dengan waktu yang sedikit, hasil pekerjaanmu akan kurang maksimal.</p>
+            <p>Jika kamu memang orang yang suka bekerja di bawah tekanan, maka buatlah target. Penuhi target tersebut semaksimal mungkin.</p>
+          </div>
+          
+          <div class="none" id="g1">
+            <p>Buatlah daftar tugas berdasarkan urutan tugas terberat ke yang paling ringan. Biasakan untuk mengerjakan tugas yang paling berat. Jika kamu berhasil mengerjakan tugas-tugasmu, berikan apresiasi dengan cara self reward</p>
+          </div>
+          
+          <div class="none" id="h1">
+            <p>Cobalah tantang dirimu untuk mencoba hal baru. Jangan takut menghadapi tantangan dan kegagalan karena itulah yang dapat membuat dirimu berkembang. Dengan gagal, kamu bisa mendapatkan banyak hal untuk kemudian bisa mengevaluasi dirimu, dan kamu bisa berkembang lebih baik. Sedikit-sedikit tidak apa-apa, kamu ngga perlu untuk menargetkan perubahan yang sangat besar</p>
+          </div>
+          
+          <div class="none" id="i1">
+            <p>Temukan apa yang membuatmu tidak percaya diri dan coba perbaiki  sesuai kemampuan</p>
+          </div>
+          
+          <div class="none" id="j1">
+            <p>Hilangkan prasangka buruk orang lain dan berpikirlah secara praktis.</p>
+          </div>
+          
+          <div class="none" id="k1">
+            <p>Mengubah pola pikir, berani mengungkapkan pendapat dan yakin pada kemampuan diri sendiri</p>
+          </div>
+          
+          <div class="none" id="l1">
+            <p>Cobalah sebisa mungkin berinteraksi selama hal tersebut positif dan cari komunitas di media sosial yang sesuai dengan hal yang kamu sukai yang positif dengan begitu skill berinteraksi kamu akan meningkat seiring waktu.</p>
+          </div>
+          
+          <div class="none" id="m1">
+            <p>Beranikan dirimu memulai interaksi baru dengan orang sekitar dan coba lupakan kejadian masa lampau dan memulailah hal baru.</p>
+          </div>
+          
+          <div class="none" id="n1">
+            <p>Hadapi rasa takut, Tenangkan diri dan kenali pemicu kecemasan yang terjadi Berpikir positif dan jangan memikirkan hal yang negatif
+         </p>
+          </div>
+          
+          <div class="none" id="o1">
+            <p>Cobalah berkenalan dengan orang baru yang memiliki bakat dan minat yang sama serta bangun kepercayaan dengan teman-teman disekitarmu, tidak semua orang itu jahat.</p>
+          </div>
+          
+          <div class="none" id="p1">
+            <p>Kenalilah tanda-tanda pertemanan yang toxic seperti kekerasan verbal ( rasis, mengejek nama orang tua dll ) & non verbal ( Kekerasan fisik ). Jika menemui hal demikian, kurangilah kontak dengan mereka.</p>
+          </div>
+          
+          <div class="none" id="q1">
+            <p>Cobalah komunikasi secara perlahan dengan teman sekitarmu dan bangun rasa percaya pada doi. Carilah kesamaan hobi, makanan, atau aktivitas lain dengan doi. Dengan begini, kamu bisa membangun kedekatan dengan si doi.</p>
+          </div>
+          
+          <div class="none" id="r1">
+            <p>Beranikanlah dirimu untuk berinteraksi dengan mereka, dan coba bangun rasa percaya. Berpikir praktis juga dapat membantumu, maksudnya kamu tidak perlu terlalu dalam memikirkan pandangan orang lain terhadapmu dan lakukan saja.</p>
+          </div>
+
+          <div class="none" id="s1">
+              <p>Penting untuk menerima emosi yang sedang kamu rasakan. Merasa kesepian setelah kehilangan adalah bagian alami dari proses berduka.</p>
+              <p>Berbagi cerita tentang kesedihan yang kamu alami ke seseorang yang dapat memberikan pengertian dann kenyamanan.</p>
+              <p>Lakukan aktivitas yang dapat membantu mengalihkan perhatian dari perasaan kesepian. Seperti menjalankan hobi, olahraga, atau menghabiskan waktu di alam.</p>
+              <p>Walaupun penting untuk memberikan waktu bagi diri sendiri untuk memproses emosi, terlalu lama mengisolasi diri bukanlah pilihan yang tepat. Cobalah untuk tetap terhubung dengan orang-orang yang memberikan kenyamanan untukmu.</p>
+          </div>
+          
+        </div>
+      </div>
+      
+  </section>
+
+  <script>
+    const button = document.getElementById('showDiv');
+
+    // Add an onclick event handler to the selected element
+    button.onclick = function() {
+        document.getElementById('test').style.display = 'flex';
+    };
+
+    var newarray = "{{quisans}}";
+    var arr = newarray.split(',');
+    for (let x in arr) {
+      document.getElementById(arr[x]).style.display = "inline";
+    }
+
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+  </body>
+</html>

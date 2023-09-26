@@ -51,4 +51,28 @@ class ContactForm4(ModelForm):
 	  't' : forms.RadioSelect(attrs={'class': "radio"}),
     }     
     	  
-
+class Quis(ModelForm):
+  class Meta:
+    model = quis
+    fields = '__all__'
+    widgets = {
+      'a1' : forms.RadioSelect(attrs={'class': "radio"}),
+      'b1' : forms.RadioSelect(attrs={'class': "radio"}),
+      'c1' : forms.RadioSelect(attrs={'class': "radio"}),
+      'd1' : forms.RadioSelect(attrs={'class': "radio"}),
+      'e1' : forms.RadioSelect(attrs={'class': "radio"}),
+      'f1' : forms.RadioSelect(attrs={'class': "radio"}),
+      'g1' : forms.RadioSelect(attrs={'class': "radio"}),
+      'h1' : forms.RadioSelect(attrs={'class': "radio"}),
+      'i1' : forms.RadioSelect(attrs={'class': "radio"}),
+      'j1' : forms.RadioSelect(attrs={'class': "radio"}),
+      'k1' : forms.RadioSelect(attrs={'class': "radio"}),
+      'l1' : forms.RadioSelect(attrs={'class': "radio"}),
+      'm1' : forms.RadioSelect(attrs={'class': "radio"}),
+      'n1' : forms.RadioSelect(attrs={'class': "radio"}),
+      'o1' : forms.RadioSelect(attrs={'class': "radio"}),
+      'p1' : forms.RadioSelect(attrs={'class': "radio"}),
+      'q1' : forms.RadioSelect(attrs={'class': "radio"}),
+      'r1' : forms.RadioSelect(attrs={'class': "radio"}),
+      's1' : forms.RadioSelect(attrs={'class': "radio"}),
+    } 

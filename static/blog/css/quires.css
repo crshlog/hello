@@ -22,7 +22,7 @@ body
   font-size: 135%;
   transition: background-color 1s ease;
   min-height: 100vh;
-  background: rgb(58, 58, 58);
+  background: linear-gradient(180deg, rgba(1,19,20,0.9864320728291317) 0%, rgba(0,212,255,1) 100%);
   z-index: -1;
 }
 
@@ -64,7 +64,7 @@ header .dropdown
   position: relative;
 }
 
-ul
+header ul
 {
   display: none;
 }
@@ -87,7 +87,65 @@ ul
   height: 100vh;
   display: flex;
   justify-content: center;
-  overflow: hidden;
+}
+
+#test
+{
+  background-color: #364d55;
+  max-width:100% ;
+  max-height: 100%;
+  display: flex;
+  place-items: center;
+  background-image: url('/static/blog/stars.png');
+  background-repeat: repeat-y;
+  align-items: center;
+  justify-content: center;
+}
+
+#result
+{
+  background-color: rgb(76, 106, 117);
+  border-radius: 10px;
+  font-size: 1.2em;
+  padding: 30px;
+  max-height: 90%;
+  max-width: 70%;
+  margin-top: 40px;
+}
+
+#result h1
+{
+  text-align: center;
+  background-color: #a8b7bc;
+  width: 100%;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+#result h6
+{
+  margin-bottom: 1rem;
+  zoom: 1.7;
+}
+
+.none ul{
+  list-style: none;
+}
+
+.none p
+{
+  background-color: #a8b7bc;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 30px;
+  margin-bottom: 0;
+}
+
+.none
+{
+  display: none;
 }
 
 .section::before
@@ -108,11 +166,12 @@ ul
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
+  height: 100%;
   object-fit: cover;
   pointer-events: none;
-  filter: grayscale(75%) blur(3px);
+  filter: grayscale(75%);
+  filter: blur(35%);
 }
 
 #info
@@ -128,12 +187,12 @@ ul
   background-color: #0a0218b4;
   color: #ffffff;
   padding-top: 20px;
-  margin: 30vh 45px;
+  margin-top: 30vh;
 }
 
 #info p
 {
-  margin-bottom: 0;
+  margin: 0 !important;
 }
 
 .btn-info
@@ -152,30 +211,12 @@ ul
 {
   background-color:#bdbdbdbb !important;
   border-radius: 2px;
-  margin-bottom: 1rem;
-}
-
-#info ol
-{
-  text-align: left;
-  justify-content: start;  
-  list-style-position: outside;
-}
-
-#info li
-{
-  padding-right: 30px;
-  margin-left: 1.25em;
+  margin: 15px 0;
 }
 
 #center #inpo
 {
   margin-bottom: 0px;
-}
-
-#info a
-{
-  width: 5em;
 }
 
 #showDiv, #btn
@@ -194,81 +235,28 @@ hr
   border-radius: 2px;
 }
 
-#test
+.ul
 {
-  background-color: #364d55;
-  max-width:100% ;
-  max-height: 100%;
-  display: none;
-  place-items: center;
-  background-image: url('/static/blog/stars.png');
-  background-repeat: repeat-y;
+  text-align: left;
+  justify-content: start;  
+  padding: auto;
+  padding-left: 20px;
 }
 
-#test p
+.li
 {
-  margin:0px;
+  display: list-item;
+  list-style-position: inside;
+  padding-right: 30px;
 }
 
-#test .btn-info
-{
-  transition: all .1s ease-in-out;
-  background-color: #6c9bac;
-  width: 100%;
-  border:1px solid #6c9bac;
-  margin: 5px 0;
-}
 
-#test .btn-info:hover
-{
-  background-color: #6c9bac;
-  width: 100%;
-  outline: 2px solid #1e2b30;
-}
 
-.myform
-{
-  margin-top: 40px;
-  background-color: rgb(76, 106, 117);
-  border-radius: 10px;
-  font-size: 1.2em;
-  padding: 30px;
-  max-height: 90%;
-}
-
-.myform label
-{
-  background-color: #a8b7bc;
-  width: 100%;
-  border-radius: 10px 10px 0 0;
-  padding: 30px 20px 10px;
-  font-weight: bold;
-}
-
-.radio div label
-{
-  border-radius: 0 0 10px 10px;
-  padding-top: 0px !important;
-  font-weight: normal !important;
-}
-
-.radio
-{
-  background-color: #a8b7bc;
-  border-radius: 0 0 10px 10px;
-  margin-bottom: 15px;
-  padding-bottom: 20px;
-}
-
-.form-group p
-{
-  color: white;
-}
 
 @media screen and (orientation: landscape){
   *
   {
-    zoom: 1;    
+    zoom: 1;
   }
   body
   {
@@ -279,19 +267,19 @@ hr
   {
     zoom: 1;
     padding: 30px 70px;
-  }
+  }  
 
   header .dropdown
   {
     display: none;
   }
-  ul
+  header ul
   {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  li
+  header li
   {
     list-style: none;
     margin-left: 20px;
@@ -324,12 +312,14 @@ hr
     background: #ffffffaf;
     color: #2b1055;
   }
-
+  
   #showDiv, #btn
   {
     zoom: 1;
   }
 }
+
+
 
 /*font-family: 'Poppins', sans-serif;
 {font-family: 'Exo 2', sans-serif;}
