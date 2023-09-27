@@ -15,200 +15,417 @@
         
         <!-- Template Stylesheet -->
         <link rel="stylesheet" type="text/css" href="{% static 'blog/css/atyle.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'blog/css/style_about.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'blog/css/style_about.css' %}">       
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="{% static 'blog/css/bootstrap.min.css' %}">       
+
+
     </head>
     <body>
-    <header>
-        <a class="logo" href="/home/">Trivind</a>
-
-        <ul>
-            <li><a class="hvr">Home</a></li>
-            <li><a class="hvr" href="/test/">MBTI Test</a></li>
-            <li><a class="active" href="/about/">About</a></li>        
-        </ul>
-
-        <div class="dropdown dropstart">
-            <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <div class="menubar"></div>
-                <div class="menubar"></div>
-                <div class="menubar"></div>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-dark drop">
-                <li><a class="dropdown-item" href="/test/">MBTI Test</a></li>
-                <li><a class="dropdown-item" href="/about/">About</a></li>
+        <header>
+            <h1 class="logo">Trivind</h1>
+            </script>
+            <ul>
+                <li><a href="/home/" class="hvr">Home</a></li>
+                <!-- a href buat ngasih link ke suatu source-->
+                <li><a class="hvr" href="/test/">MBTI Test</a></li>
+                <li><a href="about.html" class="active">About</a></li>
             </ul>
-        </div>
-    </header>
-    <section class="color">
-        <div class="section">
-            <img src="{% static 'blog/background.jpg' %}" id="blek" style="filter: grayscale(0.34);">
-        </div>
-        <!-- Service Start -->
-    <div class="container-xxl py-6">
-        <div class="container">
-            <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">Profile</div>
-                <h2 class="mb-5">SMABOY</h2>
+
+            <div class="dropdown dropstart">
+                <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="menubar"></div>
+                    <div class="menubar"></div>
+                    <div class="menubar"></div>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">MBTI Test</a></li>
+                    <li><a class="dropdown-item" href="#">About</a></li>
+                    <li><a class="dropdown-item" href="#">Login</a></li>
+                </ul>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded h-100">
-                        <div class="d-flex justify-content-between">
-                            <div class="service-icon">
-                                <i class="fa fa-user-tie fa-2x"></i>
-                            </div>
-                            <a class="service-btn" href="">
-                                <i class="fa fa-link fa-2x"></i>
-                            </a>
-                        </div>
-                        <div class="p-5">
-                            <h5 class="mb-3">Bh</h5>
-                            <span>m.</span>
-                        </div>
-                    </div>
+        </header>
+        <section class="color">
+            <div class="section">
+                <img src="{% static 'blog/2303.w030.n003.647B.p1.647.jpg' %}"id="blek">
+                <script>
+                    if(window.innerHeight < window.innerWidth){
+                        window.onscroll = function() {
+                            var currentScrollPos = window.pageYOffset;
+                            if (25 > currentScrollPos) {
+                                document.getElementById("exp").style.bottom = "48.3%";
+                                document.getElementById("exp").style.zIndex = "";
+                                
+                            } else if (500 > currentScrollPos && 25 < currentScrollPos){
+                                document.getElementById("color").style.backgroundColor = "";
+                                document.getElementById("exp").style.bottom = "-100px"; /* adjust this value to the height of your header */
+                                document.getElementById("exp").style.zIndex = "-6"; /* adjust this value to the height of your header */
+                                var style = document.head.appendChild(document.createElement("style"));
+                                style.innerHTML = ".section:before {background: linear-gradient(to top,#1c0522,transparent)}";
+                            }else{
+                                document.getElementById("color").
+                                setTimeout(function() {
+                                    var styleElem = document.head.appendChild(document.createElement("style"));
+                                styleElem.innerHTML = ".section:before {background: linear-gradient(to top,purple,transparent)}";    
+                                   }, 38);
+                                
+                            }
+                            
+                        }
+                        
+                    }else{}
+                    </script>
+            </div>
+        <video src="{% static 'blog/videoplayback.mp4'%}" width="89%", height="100%" autoplay muted loop></video>
+
+             <!-- Team Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h2 style="color: aliceblue; font-family: 'Exo 2', sans-serif;" >Meet Our Team Members</h2>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded h-100">
-                        <div class="d-flex justify-content-between">
-                            <div class="service-icon">
-                                <i class="fa fa-chart-pie fa-2x"></i>
-                            </div>
-                            <a class="service-btn" href="">
-                                <i class="fa fa-link fa-2x"></i>
-                            </a>
-                        </div>
-                        <div class="p-5">
-                            <h5 class="mb-3">S</h5>
-                            <span>m.</span>
+                <div class="row g-4" style="margin-top: 30px;">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/mrz.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            
                         </div>
                     </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/mrz.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/mrz.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/mrz.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="service-item rounded h-100">
-                        <div class="d-flex justify-content-between">
-                            <div class="service-icon">
-                                <i class="fa fa-chart-line fa-2x"></i>
-                            </div>
-                            <a class="service-btn" href="">
-                                <i class="fa fa-link fa-2x"></i>
-                            </a>
-                        </div>
-                        <div class="p-5">
-                            <h5 class="mb-3">Ms</h5>
-                            <span>Ee</span>
+                <div class="row g-4" style="margin-top: 30px;">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/mrz.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded h-100">
-                        <div class="d-flex justify-content-between">
-                            <div class="service-icon">
-                                <i class="fa fa-chart-area fa-2x"></i>
-                            </div>
-                            <a class="service-btn" href="">
-                                <i class="fa fa-link fa-2x"></i>
-                            </a>
-                        </div>
-                        <div class="p-5">
-                            <h5 class="mb-3">F</h5>
-                            <span>Erem.</span>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/mrz.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded h-100">
-                        <div class="d-flex justify-content-between">
-                            <div class="service-icon">
-                                <i class="fa fa-balance-scale fa-2x"></i>
-                            </div>
-                            <a class="service-btn" href="">
-                                <i class="fa fa-link fa-2x"></i>
-                            </a>
-                        </div>
-                        <div class="p-5">
-                            <h5 class="mb-3">ly</h5>
-                            <span>Em.</span>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/mrz.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                           
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="service-item rounded h-100">
-                        <div class="d-flex justify-content-between">
-                            <div class="service-icon">
-                                <i class="fa fa-house-damage fa-2x"></i>
-                            </div>
-                            <a class="service-btn" href="">
-                                <i class="fa fa-link fa-2x"></i>
-                            </a>
-                        </div>
-                        <div class="p-5">
-                            <h5 class="mb-3">ce</h5>a.</span>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
                         </div>
                     </div>
+                    
+                </div><div class="row g-4" style="margin-top: 30px;">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                        </div>
+                    </div>
+                    
+                </div><div class="row g-4" style="margin-top: 30px;">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                        </div>
+                    </div>
+                    
+                </div><div class="row g-4" style="margin-top: 30px;">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                        </div>
+                    </div>
+                    
+                </div><div class="row g-4" style="margin-top: 30px;">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                        </div>
+                    </div>
+                    
+                </div><div class="row g-4" style="margin-top: 30px;">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                        </div>
+                    </div>
+                    
+                </div><div class="row g-4" style="margin-top: 30px;">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                        </div>
+                    </div>
+                    
+                </div><div class="row g-4" style="margin-top: 30px;">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                        </div>
+                    </div>
+                    
+                </div><div class="row g-4" style="margin-top: 30px;">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item">
+                            <h5>Full Name</h5>
+                            <p class="mb-4">Designation</p>
+                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Service End -->
-            <!-- Team Start -->
-    <div class="container-xxl py-6">
-        <div class="container">
-            <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">Our Team</div>
-                <h2 class="mb-5">Meet Our Team Members</h2>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item">
-                        <h5>Full Name</h5>
-                        <p class="mb-4">Designation</p>
-                        <img class="img-fluid rounded-circle w-100 mb-4" src="" alt="">
-                        <div class="d-flex justify-content-center">
-                            <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <h5>Full Name</h5>
-                        <p class="mb-4">Designation</p>
-                        <img class="img-fluid rounded-circle w-100 mb-4" src="violet.jpeg" alt="">
-                        <div class="d-flex justify-content-center">
-                            <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item">
-                        <h5>Full Name</h5>
-                        <p class="mb-4">Designation</p>
-                        <img class="img-fluid rounded-circle w-100 mb-4" src="" alt="">
-                        <div class="d-flex justify-content-center">
-                            <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item">
-                        <h5>Full Name</h5>
-                        <p class="mb-4">Designation</p>
-                        <img class="img-fluid rounded-circle w-100 mb-4" src="" alt="">
-                        <div class="d-flex justify-content-center">
-                            <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        <!-- Team End -->
+        
+
+
+
+  
+    
     <!-- Team End -->
     
 

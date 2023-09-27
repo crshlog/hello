@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #00B98E;
+    --primary: #ffffff;
     --light: #F3F6F8;
     --dark: #0E2E50;
 }
@@ -124,7 +124,7 @@
 
     .navbar .navbar-collapse {
         margin-top: 15px;
-        border-top: 1px solid #DDDDDD;
+        border-top: 1px solid #ffffff;
     }
 
     .navbar .navbar-nav .nav-link,
@@ -353,9 +353,7 @@
 }
 
 .team-item:hover::before,
-.team-item:hover::after {
-    background: var(--primary);
-}
+.team-item:hover::after 
 
 .team-item h5,
 .team-item p {
@@ -364,7 +362,7 @@
 
 .team-item:hover h5,
 .team-item:hover p {
-    color: #FFFFFF;
+    color: rebeccapurple;
 }
 
 .team-item img {
