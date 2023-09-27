@@ -181,7 +181,10 @@ ul
   color: #ffff;
 }
 
-
+.fitur
+{
+  list-style:decimal !important;
+}
 
 
   

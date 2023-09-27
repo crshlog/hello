@@ -170,8 +170,7 @@ header ul
   height: 100%;
   object-fit: cover;
   pointer-events: none;
-  filter: grayscale(75%);
-  filter: blur(35%);
+  filter: grayscale(75%) blur(3px);
 }
 
 #info

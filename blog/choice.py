@@ -33,31 +33,31 @@ question = [
        'Logis, berpikir, bertanya', 
        'Empati, perasaan, akomodatif' 
     ],[ 
-       'Jujur, lurus ke depan, terus terang atau ', 
+       'Jujur, lurus ke depan, terus terang',
        'Bijaksana, baik hati, memberi semangat' 
     ],[ 
-       'Tegas, cenderung mengkritik, menahan diri atau', 
+       'Tegas, cenderung mengkritik, menahan diri', 
        'Lembut, cenderung menghargai, mendamaikan' 
     ],[ 
-       'Berpikiran keras, adil atau', 
+       'Berpikiran keras, adil', 
        'Berhati lembut, penyayang' 
     ],[ 
-       'Sebenarnya, berorientasi pada masalah atau',
+       'Sebenarnya, berorientasi pada masalah',
        'Sensitif, berorientasi pada orang, penuh kasih sayang' 
     ],[ 
-       'Teratur, teratur atau', 
+       'Teratur, susah beradaptasi', 
        'Fleksibel, mudah beradaptasi' 
     ],[ 
-       'Rencana, jadwal atau', 
+       'Rencana, jadwal', 
        'Tidak direncanakan, spontan' 
     ],[ 
-       'Teratur, terstruktur atau', 
+       'Teratur, terstruktur', 
        'Santai, “Hidup” dan “Biarkan hidup”' 
     ],[ 
-       'Persiapan, rencana ke depan atau', 
+       'Persiapan, rencana ke depan', 
        'Mengikuti arus, beradaptasi seiring berjalannya waktu'
     ],[ 
-       'Mengendalikan, memerintah atau', 
+       'Mengendalikan, memerintah', 
        'Lintang, kebebasan' 
     ] 
 ]
