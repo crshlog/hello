@@ -12,25 +12,22 @@
         
         <!-- Customized Bootstrap Stylesheet -->
         <link rel="stylesheet" type="text/css" href="{% static 'blog/css/bootstrap.min.css' %}">
-        
         <!-- Template Stylesheet -->
         <link rel="stylesheet" type="text/css" href="{% static 'blog/css/atyle.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'blog/css/style_about.css' %}">       
 
         <!-- Customized Bootstrap Stylesheet -->
-        <link rel="stylesheet" type="text/css" href="{% static 'blog/css/bootstrap.min.css' %}">       
 
 
     </head>
     <body>
         <header>
-            <h1 class="logo">Trivind</h1>
-            </script>
-            <ul>
+            <a class="logo" href="/home/" >Trivind</a>
+            <ul style="margin: 0;">
                 <li><a href="/home/" class="hvr">Home</a></li>
                 <!-- a href buat ngasih link ke suatu source-->
                 <li><a class="hvr" href="/test/">MBTI Test</a></li>
-                <li><a href="about.html" class="active">About</a></li>
+                <li><a class="active">About</a></li>
             </ul>
 
             <div class="dropdown dropstart">
@@ -40,9 +37,8 @@
                     <div class="menubar"></div>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">MBTI Test</a></li>
-                    <li><a class="dropdown-item" href="#">About</a></li>
-                    <li><a class="dropdown-item" href="#">Login</a></li>
+                    <li><a class="dropdown-item" href="/home/">Home</a></li>
+                    <li><a class="dropdown-item" href="/test/">MBTI Test</a></li>
                 </ul>
             </div>
         </header>
@@ -76,45 +72,54 @@
                         
                     }else{}
                     </script>
-            </div>
-        <video src="{% static 'blog/videoplayback.mp4'%}" width="89%", height="100%" autoplay muted loop></video>
 
-             <!-- Team Start -->
-        <div class="container-xxl py-6">
-            <div class="container">
-                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px; padding:20px; z-index:1; zoom:1.5">
+                        <h1 style="color: aliceblue; font-family: 'Exo 2', sans-serif;" >About Us</h1>
+                    </div>
+
+                    <section id="section04" class="demo">
+                        <a href="#vid"><span></span></a>
+                      </section>
+            </div>
+            
+            <!-- Team Start -->
+            <div class="container-xxl py-6 bacg">
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px; padding:20px">
+                    <h2 style="color: aliceblue; font-family: 'Exo 2', sans-serif;" >Video Trailer</h2>
+                </div>
+                <div class="video " id="vid">
+                    <iframe src="https://drive.google.com/file/d/1qhm0yiEU9xbTKujFV9vf1Q6obemKZN--/preview" width="640" height="480" allow="autoplay"></iframe>
+                </div>
+                <div class="container"> 
+                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px; padding:20px">
                     <h2 style="color: aliceblue; font-family: 'Exo 2', sans-serif;" >Meet Our Team Members</h2>
                 </div>
                 <div class="row g-4" style="margin-top: 30px;">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/mrz.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Indra</h5>
+                            <img src="{% static 'blog/IMG_8442.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                             
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/mrz.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Elisa</h5>
+                            <img src="{% static 'blog/IMG_8481.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                             
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/mrz.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Aulya</h5>
+                            <img src="{% static 'blog/IMG_8479.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                            
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/mrz.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Naila</h5>
+                            <img src="{% static 'blog/IMG_8496.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                         </div>
                     </div>
                     
@@ -122,299 +127,236 @@
                 <div class="row g-4" style="margin-top: 30px;">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/mrz.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Haidar</h5>
+                            <img src="{% static 'blog/IMG_8433.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                             
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/mrz.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Tiara</h5>
+                            <img src="{% static 'blog/IMG_8499.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                             
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/mrz.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Desy</h5>
+                            <img src="{% static 'blog/IMG_8501.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                            
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Naya</h5>
+                            <img src="{% static 'blog/IMG_8516.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                         </div>
                     </div>
                     
                 </div><div class="row g-4" style="margin-top: 30px;">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Bintang</h5>
+                            <img src="{% static 'blog/IMG_8443.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                             
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Fahri</h5>
+                            <img src="{% static 'blog/IMG_8448.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                             
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Mirza</h5>
+                            <img src="{% static 'blog/IMG_8460.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                            
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Nesda</h5>
+                            <img src="{% static 'blog/IMG_8465.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                         </div>
                     </div>
                     
                 </div><div class="row g-4" style="margin-top: 30px;">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Ardit</h5>
+                            <img src="{% static 'blog/IMG_8423.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                             
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Dinar</h5>
+                            <img src="{% static 'blog/IMG_8466.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                             
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Naufal</h5>
+                            <img src="{% static 'blog/IMG_8446.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                            
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Gresi</h5>
+                            <img src="{% static 'blog/IMG_8467.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                         </div>
                     </div>
                     
                 </div><div class="row g-4" style="margin-top: 30px;">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Diva</h5>
+                            <img src="{% static 'blog/IMG_8470.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                             
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Churun</h5>
+                            <img src="{% static 'blog/IMG_8472.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                             
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Ceysia</h5>
+                            <img src="{% static 'blog/IMG_8506.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                            
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Ocha</h5>
+                            <img src="{% static 'blog/IMG_8507.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                         </div>
                     </div>
                     
                 </div><div class="row g-4" style="margin-top: 30px;">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Farra</h5>
+                            <img src="{% static 'blog/IMG_8510.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                             
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Putri</h5>
+                            <img src="{% static 'blog/IMG_8511.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                             
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Salsa</h5>
+                            <img src="{% static 'blog/IMG_8512.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                            
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Alaudya</h5>
+                            <img src="{% static 'blog/IMG_8521.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                         </div>
                     </div>
                     
                 </div><div class="row g-4" style="margin-top: 30px;">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Rafa</h5>
+                            <img src="{% static 'blog/rafa.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                             
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Belva</h5>
+                            <img src="{% static 'blog/IMG_8474.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                             
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Ulya</h5>
+                            <img src="{% static 'blog/FullSizeRender.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                            
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Ikhsan</h5>
+                            <img src="{% static 'blog/IMG_8426.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                         </div>
                     </div>
                     
                 </div><div class="row g-4" style="margin-top: 30px;">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Hafidz</h5>
+                            <img src="{% static 'blog/IMG_8431.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                             
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Elga</h5>
+                            <img src="{% static 'blog/IMG_8430.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                             
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Ruci</h5>
+                            <img src="{% static 'blog/IMG_8437.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                            
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Kamil</h5>
+                            <img src="{% static 'blog/IMG_8439.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                         </div>
                     </div>
                     
                 </div><div class="row g-4" style="margin-top: 30px;">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Farrel</h5>
+                            <img src="{% static 'blog/IMG_8440.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                             
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
-                            
+                            <h5>Litan</h5>
+                            <img src="{% static 'blog/IMG_8427.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                           
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Ali</h5>
+                            <img src="{% static 'blog/IMG_8730.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                            
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
+                            <h5>Zhasgyesha</h5>
+                            <img src="{% static 'blog/myy1.jpg' %}" class="img-fluid rounded-circle w-100 mb-4">
                         </div>
                     </div>
                     
-                </div><div class="row g-4" style="margin-top: 30px;">
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
-                            
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
-                            
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
-                           
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="team-item">
-                            <h5>Full Name</h5>
-                            <p class="mb-4">Designation</p>
-                            <img src="{% static 'blog/violet.jpeg' %}" class="img-fluid rounded-circle w-100 mb-4">
-                        </div>
-                    </div>
+                
                     
                 </div>
             </div>
